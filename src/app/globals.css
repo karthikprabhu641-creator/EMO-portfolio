@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2D257D;
+  --secondary: #581C87;
+  --tertiary: #9CA3AF;
+  --neutral: #F5EFFF;
+  --surface: #FFFFFF;
+  --on-surface: #2A1647;
+  --error: #B42318;
+  --border: #E5E7EB;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #F5EFFF;
+  color: #2A1647;
+  font-family: "IBM Plex Mono", SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Editorial selection */
+::selection {
+  background-color: #2D257D;
+  color: #F5EFFF;
+}
+
+/* Design Tokens Typography Utility Classes */
+.headline-display {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: clamp(48px, 9vw, 128px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0px;
+}
+
+.headline-lg {
+  font-family: "Emotion Serif", "Playfair Display", Georgia, serif;
+  font-size: clamp(38px, 6vw, 76px);
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0px;
+}
+
+.headline-md {
+  font-family: "Emotion Serif", "Playfair Display", Georgia, serif;
+  font-size: clamp(28px, 4vw, 45px);
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+.headline-sm {
+  font-family: "Emotion Serif", "Playfair Display", Georgia, serif;
+  font-size: clamp(20px, 2.5vw, 27px);
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+.body-lg {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 18.6667px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.body-md {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.body-sm {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.label-lg {
+  font-family: "PP Neue Montreal", Inter, sans-serif;
+  font-size: 18.6667px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+.label-md {
+  font-family: "PP Neue Montreal", Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+.label-sm {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+.caption-md {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+}
